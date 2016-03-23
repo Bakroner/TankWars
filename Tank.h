@@ -30,6 +30,16 @@ using namespace std;
 class Tank{
 public:
 
+	SDL_Texture *back, *mid, *front;
+
+	SDL_Rect backR, midR, frontR;
+
+	float playerHealth, maxHealth;
+
+	void eTankHit();
+
+	void eBulletHit();
+
 	bool active;
 
 	vector<TankBullet> bulletList;

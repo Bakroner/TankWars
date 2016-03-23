@@ -36,7 +36,7 @@ Turret::Turret(SDL_Renderer *renderer, string filePath, string audioPath, float 
 
 	for (int i = 0; i < 10; i++)
 	{
-		TurretBullet tmpBullet(renderer, bulletPath, 500, 500);
+		TurretBullet tmpBullet(renderer, bulletPath, 1500, 1500);
 
 		bulletList.push_back(tmpBullet);
 	}
